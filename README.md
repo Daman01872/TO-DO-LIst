@@ -1,80 +1,42 @@
-# Build TODO App with Redux and React JS
+To-do-list-with-Redux-mini-project-
+Instructions Build a TODO app with React and Redux
 
-This repository contains code for Todo app with react-redux.
+This assignment is about creating a React and Redux Todo List app. User can add new todos, mark as completed, remove a todo, and filter todos. This assignment is to test your knowledge on Action, Reducers, Store, and Components.
 
-View Demo:
-https://react-redux-todo-app-lac.vercel.app/
+React UI Components
 
-If you want to learn how to create it please follow below tutorial:
+We have implemented our React UI components as follows:
 
-https://youtu.be/YhgSuUkWlK4
+TodoApp is the entry component for our app. It renders the header, the AddTodo, TodoList.
 
+AddTodo is the component that allows a user to input a todo item and add to the list upon clicking its “Add Todo” button.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TodoList is the component that renders the list of todos .
 
-## Available Scripts
+Todo is the component that renders a single todo item:
 
-In the project directory, you can run:
+VisibilityFilters renders a simple set of filters: all, completed, and incomplete.
 
-### `npm start`
+The Redux Store
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Redux portion of the application
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Store
 
-### `npm test`
+Action
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Reducers
 
-### `npm run build`
+Providing the Store
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+create store in our app and wrap our app with the <provider></provider>.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Connecting the Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React Redux provides a connect function for you to read values from the Redux store. use
 
-### `npm run eject`
+MapStateToProps
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+MapDispatchToProps
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Provide a login and password form and after accepting the user info (no authentication) display the user info on the right hand side of nav bar in todo list page.
