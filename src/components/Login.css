@@ -1,0 +1,8 @@
+label{
+    font-size: 20px;
+    color: rgb(2, 16, 39);
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none !important;
+}
